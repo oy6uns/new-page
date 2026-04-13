@@ -19,7 +19,7 @@ const translations = {
     sports: "운동",
     sports_desc: "다양한 스포츠를 즐깁니다.",
     game: "게임",
-    game_desc: "여러 종류의 게임을 즐깁니다.",
+    game_desc: "친구들과 종종 게임을 즐깁니다.",
     cooking: "요리",
     cooking_desc: "새로운 요리를 시도하는 것을 좋아합니다.",
     goals_title: "이번 학기 목표",
