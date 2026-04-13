@@ -7,7 +7,7 @@ const translations = {
     about_title: "About Me",
     about_text: "저는 박현우 교수님 연구실 석사과정 4학기 차 배성호입니다. 서울에서 태어나, 현재 서울대학교 대학원에 다니고 있습니다.",
     hero_greeting: "안녕하세요, 배성호입니다",
-    hero_desc: "저는 여러분들의 조교입니다.",
+    hero_desc: "저는 여러분들의 수업 조교입니다.",
     interests_title: "관심사",
     hobbies_title: "취미",
     music: "음악감상",
