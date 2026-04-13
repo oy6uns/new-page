@@ -18,7 +18,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2. GitHub Pages에 배포
+      # 2. 내용 반영을 위한 캐시 제거 
+      - name: Add cache busting
+        run: |
+          VERSION=$(date +%s)
+          sed -i "s/style.css/style.css?v=$VERSION/g" index.html
+
+      # 3. GitHub Pages에 배포
       - name: Deploy to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
