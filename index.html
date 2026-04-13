@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <!-- Tailwind CSS CDN: 설치 없이 바로 사용 가능! -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- 네비게이션 -->
+  <nav class="fixed top-0 w-full bg-white shadow-sm px-8 py-4 flex justify-between items-center z-10">
+    <span class="font-bold text-lg"><!-- 이름 --></span>
+    <ul class="flex gap-6 text-sm text-gray-600">
+      <li><a href="#about" class="hover:text-indigo-500">소개</a></li>
+      <li><a href="#interests" class="hover:text-indigo-500">관심사</a></li>
+      <li><a href="#goals" class="hover:text-indigo-500">목표</a></li>
+    </ul>
+  </nav>
+
+  <!-- 히어로 섹션 -->
+  <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-16">
+    <!-- 프로필 이미지 or 이모지 -->
+    <div class="text-7xl mb-6">🙂</div>
+    <h1 class="text-4xl font-bold mb-4">
+      안녕하세요, <span class="text-indigo-500"><!-- 이름 --></span>입니다
+    </h1>
+    <p class="text-gray-500 text-lg max-w-md">
+      <!-- 나를 한 문장으로 소개한다면? -->
+    </p>
+  </section>
+
+  <!-- 소개 섹션 -->
+  <section id="about" class="py-20 px-8 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6 text-center">About Me</h2>
+    <p class="text-gray-600 leading-relaxed text-center">
+      <!-- 출신 지역, 학교, 학과 등 간단한 소개 -->
+    </p>
+  </section>
+
+  <!-- 관심사 섹션 -->
+  <section id="interests" class="py-20 px-8 bg-gray-50">
+    <h2 class="text-2xl font-bold mb-10 text-center">관심사</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+      <!-- 관심사 카드 1 -->
+      <div class="bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-md transition">
+        <div class="text-4xl mb-4">🎵</div>
+        <h3 class="font-semibold text-lg mb-2">관심사 1</h3>
+        <p class="text-gray-500 text-sm"><!-- 설명 --></p>
+      </div>
+
+      <!-- 관심사 카드 2 -->
+      <div class="bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-md transition">
+        <div class="text-4xl mb-4">📚</div>
+        <h3 class="font-semibold text-lg mb-2">관심사 2</h3>
+        <p class="text-gray-500 text-sm"><!-- 설명 --></p>
+      </div>
+
+      <!-- 관심사 카드 3 -->
+      <div class="bg-white rounded-xl p-6 shadow-sm text-center hover:shadow-md transition">
+        <div class="text-4xl mb-4">🌍</div>
+        <h3 class="font-semibold text-lg mb-2">관심사 3</h3>
+        <p class="text-gray-500 text-sm"><!-- 설명 --></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 목표 섹션 -->
+  <section id="goals" class="py-20 px-8 max-w-2xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-6">이번 학기 목표</h2>
+    <div class="bg-indigo-50 rounded-xl p-8 text-indigo-700 font-medium text-lg">
+      <!-- 이번 학기 목표 한 가지 -->
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="py-8 text-center text-gray-400 text-sm border-t">
+    <!-- 이름 --> · <!-- 학번 --> · Made with GitHub Copilot 🤖
+  </footer>
+
+</body>
+</html>
