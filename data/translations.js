@@ -49,6 +49,6 @@ const translations = {
     cooking: "Cooking",
     cooking_desc: "I love trying new recipes.",
     goals_title: "This Semester's Goal",
-    goals_text: "Live happily!!"
+    goals_text: "Live happily!!!"
   }
 };
