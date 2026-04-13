@@ -1,0 +1,28 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에 push할 때마다 자동 실행
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      # 1. 코드 가져오기
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. GitHub Pages에 배포
+      - name: Deploy to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'  # 루트 폴더 전체 배포
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4
